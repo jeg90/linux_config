@@ -1,0 +1,17 @@
+linux_config
+------------
+A collection of configuration files I use on different Linux boxes, and tools
+for installing and using them.  Currently contains bash and vim config files.
+
+GETTING STARTED
+---------------
+Clone the repository and navigate to it's root directory.  Here you can see the various configuration files available.  The 'install-config.sh' script is
+provided for copying config files to their default locations on Linux machines.
+
+If you dont want all the files installed, they can also be copied individually.
+
+STATUS AND UPDATES
+------------------
+THe project is currently under initial development.  Configuration files are
+still being cleaned up and added, and the 'install-config.sh' script is
+currently incomplete.
