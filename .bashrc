@@ -118,3 +118,6 @@ alias fucking='echo "*sigh* FIIIIIIINE" && sleep 1 && /usr/bin/sudo'
 
 alias untar='tar -xvf '
 alias sl='ls'
+
+#Make sure that vim is used as the default editor for everything
+EDITOR=vim
