@@ -9,8 +9,9 @@ set softtabstop=2
 set expandtab
 
 "Number lines relatively...easier to jump bw lines.
-set relativenumber
-
+if version >= 703
+  set relativenumber
+endif
 "Keep cursor in center of screen
 set so=6
 
@@ -20,10 +21,12 @@ highlight IfSpace ctermbg=darkgreen guibg=lightgreen
 highlight ForSpace ctermbg=darkgreen guibg=lightgreen
 highlight WhileSpace ctermbg=darkgreen guibg=lightgreen
 
-call matchadd('ExtraWhitespace', '\s\+$', 11)
-call matchadd('IfSpace', ' if(', 11)
-call matchadd('ForSpace', ' for(', 11)
-call matchadd('WhileSpace', ' while(', 11)
+if version >= 703
+  call matchadd('ExtraWhitespace', '\s\+$', 11)
+  call matchadd('IfSpace', ' if(', 11)
+  call matchadd('ForSpace', ' for(', 11)
+  call matchadd('WhileSpace', ' while(', 11)
+endif
 
 "Mappings
 let mapleader = "-"
