@@ -121,3 +121,7 @@ alias sl='ls'
 
 #Make sure that vim is used as the default editor for everything
 EDITOR=vim
+
+#Write this function as a 'multi-word' alia
+ #If  my argument is git sttaus, just run git status
+git() { if [[ $@ == "sttaus" ]]; then command git status; else command git "$@"; fi; }
