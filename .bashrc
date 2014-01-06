@@ -125,3 +125,7 @@ EDITOR=vim
 
 #Make sure 'ctags' means 'Exuberant Ctags' (and not emacs ctags)
 alias ctags='~/bin/ctags'
+
+#Write this function as a 'multi-word' alia
+ #If  my argument is git sttaus, just run git status
+git() { if [[ $@ == "sttaus" ]]; then command git status; else command git "$@"; fi; }
