@@ -106,7 +106,8 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-PATH=$PATH\:/home/jason/Docs/Projects/Apps
+#Add my local bin directory to my path
+PATH=$PATH:~/bin
 PROMPT_COMMAND='CurDir=`pwd|sed -e "s!$HOME!~!"|sed -re "s!([^/])[^/]+/!\1/!g"`'
 PS1="[\$CurDir] \$ "
 
@@ -121,3 +122,6 @@ alias sl='ls'
 
 #Make sure that vim is used as the default editor for everything
 EDITOR=vim
+
+#Make sure 'ctags' means 'Exuberant Ctags' (and not emacs ctags)
+alias ctags='~/bin/ctags'
